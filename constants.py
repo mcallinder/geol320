@@ -17,7 +17,8 @@ colors = {
     'Santa Monica'  : qualitative.Light24[11],
     'Los Angeles'   : qualitative.Light24[12],
     'La Jolla'      : qualitative.Light24[13],
-    'San Diego'     : qualitative.Light24[14]
+    'San Diego'     : qualitative.Light24[14],
+    'Oil Platform'  : qualitative.Light24[16]
 }
 
 # CO2 concentration data
@@ -46,7 +47,7 @@ uhslc_list = [
     [551, 'San Francisco',  uhslc_sanfr,    [37.80700, -122.46500]],
     [555, 'Monterey',       uhslc_monte,    [36.60500, -121.88800]],
     [565, 'Port San Luis',  uhslc_ports,    [35.17700, -120.76000]],
-#   [594, 'Oil Platform',   uhslc_oilpl,    [34.46800, -120.67300]],
+    [594, 'Oil Platform',   uhslc_oilpl,    [34.46800, -120.67300]],
     [577, 'Santa Barbara',  uhslc_santb,    [34.40800, -119.68500]],
     [578, 'Santa Monica',   uhslc_santm,    [34.00800, -118.50000]],
     [567, 'Los Angeles',    uhslc_losan,    [33.72000, -118.27200]],
