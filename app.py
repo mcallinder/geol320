@@ -1,5 +1,4 @@
-import dash
-from dash import Dash, html, dcc
+from dash import Dash, dcc, html, page_container, page_registry
 import dash_bootstrap_components as dbc
 
 app = Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
@@ -15,7 +14,7 @@ app.layout = html.Div([
                         f"{page['name']}", href=page["relative_path"], style={'textDecoration': 'none', 'color': 'white'}
                     )
                 ], style={'paddingLeft': '20px', 'display': 'inline-block'})
-                for page in dash.page_registry.values()
+                for page in page_registry.values()
             ]),
         ],
         brand="GEOL 320 / 330 App",
@@ -27,7 +26,7 @@ app.layout = html.Div([
         dbc.Col(md=1, lg=1),
         dbc.Col([
             html.Br(),
-            dash.page_container
+            page_container
         ], md=10, lg=10)
     ])
 ])

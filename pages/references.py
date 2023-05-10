@@ -1,7 +1,6 @@
-import dash
-from dash import html, dcc
+from dash import dcc, html, register_page
 
-dash.register_page(__name__)
+register_page(__name__)
 
 layout = html.Div([
     html.H3('References and Data Sources'),
