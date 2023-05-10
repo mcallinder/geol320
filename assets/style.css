@@ -1,0 +1,36 @@
+div.markdown a {
+    text-decoration: none;
+}
+
+div.markdown a:hover {
+    text-decoration: underline;
+}
+
+div.markdown h4 {
+    margin-top: 40px;
+    text-decoration: underline;
+}
+
+div.about h4 {
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+div.markdown h5 {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+div.markdown h6 {
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+div.links p {
+    margin: 0;
+}
+
+div.markdown ul {
+    margin-bottom: 10px;
+    margin-left: 60px;
+}

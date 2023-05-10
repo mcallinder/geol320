@@ -28,7 +28,8 @@ app.layout = html.Div([
             html.Br(),
             page_container
         ], md=10, lg=10)
-    ])
+    ]),
+    html.Br()
 ])
 
 

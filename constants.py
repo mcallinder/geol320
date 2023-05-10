@@ -2,6 +2,14 @@ from plotly.colors import qualitative
 
 use_remote = False
 
+config = {
+    'displaylogo': False,
+    'displayModeBar': False,
+    # 'modeBarButtonsToRemove': ['zoom', 'pan', 'select', 'zoomIn', 'zoomOut', 'autoScale', 'resetScale'],
+    'scrollZoom': True,
+    # 'staticPlot': True,
+}
+
 # California tide gauge stations
 name_cresc = 'Crescent City'
 name_humbo = 'Humboldt Bay'
@@ -48,12 +56,12 @@ uhslc_arena = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d573a.
 uhslc_sanfr = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d551a.csv" if use_remote else "data/d551a.csv"
 uhslc_monte = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d555a.csv" if use_remote else "data/d555a.csv"
 uhslc_ports = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d565a.csv" if use_remote else "data/d565a.csv"
-uhslc_losan = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d567a.csv" if use_remote else "data/d567a.csv"
-uhslc_santm = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d578a.csv" if use_remote else "data/d578a.csv"
+uhslc_oilpl = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d594a.csv" if use_remote else "data/d594a.csv"
 uhslc_santb = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d577a.csv" if use_remote else "data/d577a.csv"
+uhslc_santm = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d578a.csv" if use_remote else "data/d578a.csv"
+uhslc_losan = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d567a.csv" if use_remote else "data/d567a.csv"
 uhslc_lajol = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d554a.csv" if use_remote else "data/d554a.csv"
 uhslc_sandi = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d569a.csv" if use_remote else "data/d569a.csv"
-uhslc_oilpl = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d594a.csv" if use_remote else "data/d594a.csv"
 
 # PSMSL tide monthly gauge data
 psmsl_cresc_mon = "https://psmsl.org/data/obtaining/rlr.monthly.data/378.rlrdata"  if use_remote else "data/378.rlrdata"
@@ -115,9 +123,9 @@ psmsl_list = [
     [2330, name_portc, psmsl_portc_mon, psmsl_portc_ann, coord_portc],
     [437,  name_alame, psmsl_alame_mon, psmsl_alame_ann, coord_alame],
     [2329, name_redwo, psmsl_redwo_mon, psmsl_redwo_ann, coord_redwo],
-    [508,  name_monte, psmsl_monte_mon, psmsl_monte_ann, coord_monte],
-    [2126, name_ports, psmsl_ports_mon, psmsl_ports_ann, coord_ports],
-    [377,  name_santb, psmsl_santb_mon, psmsl_santb_ann, coord_santb],
+    [1352, name_monte, psmsl_monte_mon, psmsl_monte_ann, coord_monte],
+    [508,  name_ports, psmsl_ports_mon, psmsl_ports_ann, coord_ports],
+    [2126, name_santb, psmsl_santb_mon, psmsl_santb_ann, coord_santb],
     [377,  name_santm, psmsl_santm_mon, psmsl_santm_ann, coord_santm],
     [245,  name_losan, psmsl_losan_mon, psmsl_losan_ann, coord_losan],
     [256,  name_lajol, psmsl_lajol_mon, psmsl_lajol_ann, coord_lajol],

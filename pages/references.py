@@ -4,7 +4,7 @@ register_page(__name__)
 
 layout = html.Div([
     html.H3('References and Data Sources'),
-    html.Hr(),
+    html.Hr(style={'margin-top': '32px'}),
     dcc.Markdown('''
         #### GEOL 320 Project
         
@@ -42,5 +42,5 @@ layout = html.Div([
         Sea-Level Rise Leadership Team. (2022). State Agency Sea-Level Rise Action Plan For California. Ocean Protection Council. Retrieved from https://www.opc.ca.gov/webmaster/_media_library/2022/08/SLR-Action-Plan-2022-508.pdf
         
         Tide Gauge Data. (2023). Retrieved April 24, 2023, from Permanent Service for Mean Sea Level (PSMSL): http://www.psmsl.org/data/obtaining
-    ''')
+    ''', link_target="_blank", className="markdown ref")
 ])

@@ -4,7 +4,7 @@ register_page(__name__)
 
 layout = html.Div([
     html.H3('Technical Write-Up and Retrospective'),
-    html.Hr(),
+    html.Hr(style={'margin': '32px 0'}),
     dcc.Markdown('''
         #### Introduction
     
@@ -50,7 +50,7 @@ layout = html.Div([
         #### Conclusion
         
         This was a challenging project for many reasons. Exploring all the available datasets quickly became overwhelming and I kept finding a need to narrow the scope of my analysis if I were to complete any of it before the class ended. On top of that, Python being the popular tool meant that there were numerous options available to do what I wanted to do. Investigating those that seemed to suit my needs and work well with each other was a challenge in and of itself. Despite my previous experience, learning to use said tools adequately is not a trivial manner, and I continue to learn more every time I revisit the project. However, the challenge of such work is one of the main reasons I enjoy it. This exercise has been a fulfilling experience and puts me in a good position to perform future work more efficiently and effectively.
-    '''),
+    ''', link_target="_blank", className="markdown about"),
     html.Br(),
     html.H3('Technologies Considered'),
     html.Br(),
