@@ -41,5 +41,6 @@ layout = html.Div([
         
         Permanent Service for Mean Sea Level (PSMSL). (2023). *Tide Gauge Data* \[Dataset\]. Retrieved 2023 from http://www.psmsl.org/data/obtaining/
 
+        Sea-Level Rise Leadership Team. (2022). *State Agency Sea-Level Rise Action Plan For California*. Ocean Protection Council. Retrieved from https://www.opc.ca.gov/webmaster/_media_library/2022/08/SLR-Action-Plan-2022-508.pdf
     ''', link_target="_blank", className="markdown ref")
 ])
