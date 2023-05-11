@@ -1,4 +1,4 @@
-from constants import co2_data1, co2_data2, colors, config, uhslc_list, psmsl_list
+from constants import co2_data1, co2_data2, colors, config, uhslc_list, psmsl_list, title
 from dash import callback, dcc, html, Input, Output, register_page
 from dash.exceptions import PreventUpdate
 import dash_bootstrap_components as dbc
@@ -46,7 +46,9 @@ for psmsl_station in psmsl_list:
     dfs.append(df)
 psmsl_ann_df = pd.concat(dfs, ignore_index=True)
 
-register_page(__name__, path='/', name='Home')
+register_page(__name__, path='/', name='Home', title=f'{title}')
+
+reflink = dcc.Link('See references page for data source citations.', href='/references', style={'marginTop': '15px', 'fontSize': 'small', 'textDecoration': 'none'})
 
 layout = html.Div([
     html.H3('Data Dashboard'),
@@ -115,7 +117,7 @@ layout = html.Div([
                         dbc.Col(dcc.Graph(id='psmsl-rate-fig', config=config), md=6, lg=6)
                     ])
                 ]),
-                dbc.CardFooter(),
+                dbc.CardFooter(reflink, style={'textAlign': 'center'}),
             ])
         ], label='PSMSL Tide Gauge'),
         dbc.Tab([
@@ -133,14 +135,14 @@ layout = html.Div([
                     html.Br()
                 ]),
                 dbc.CardBody(dcc.Graph(id='uhslc-tide-gauge-fig', config=config)),
-                dbc.CardFooter()
+                dbc.CardFooter(reflink, style={'textAlign': 'center'})
             ])
         ], label='UHSLC Daily Tide Gauge'),
         dbc.Tab([
             dbc.Card([
                 dbc.CardHeader(),
                 dbc.CardBody(dcc.Graph(figure=co2_fig, config=config)),
-                dbc.CardFooter()
+                dbc.CardFooter(reflink, style={'textAlign': 'center'})
             ])
         ], label='CO2 Concentration')
     ])

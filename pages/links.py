@@ -1,7 +1,7 @@
-import dash
-from dash import html, dcc
+from constants import title
+from dash import html, dcc, register_page
 
-dash.register_page(__name__)
+register_page(__name__, title=f'{title} - Links')
 
 layout = html.Div([
     html.H3('Links to Information and Data Sources'),
@@ -94,6 +94,5 @@ layout = html.Div([
         - [Git](https://git-scm.com/) - A version control system
         - [Github](https://github.com/) - A software development service built around Git
         - [PyCharm](https://www.jetbrains.com/pycharm/) - Python IDE from JetBrains
-
     ''', link_target="_blank", className="markdown links")
 ])

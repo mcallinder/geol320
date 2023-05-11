@@ -1,3 +1,4 @@
+from constants import title
 from dash import Dash, dcc, html, page_container, page_registry
 import dash_bootstrap_components as dbc
 
@@ -17,9 +18,9 @@ app.layout = html.Div([
                 for page in page_registry.values()
             ]),
         ],
-        brand="GEOL 320 / 330 App",
-        brand_href="/",
-        color="dark",
+        brand=title,
+        brand_href='/',
+        color='dark',
         dark=True,
     ),
     dbc.Row([

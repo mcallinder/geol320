@@ -2,6 +2,8 @@ from plotly.colors import qualitative
 
 use_remote = False
 
+title = "GEOL 320 - Sea-Level Rise in California"
+
 config = {
     'displaylogo': False,
     'displayModeBar': False,
