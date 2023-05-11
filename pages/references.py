@@ -9,13 +9,13 @@ layout = html.Div([
     dcc.Markdown('''
         #### GEOL 320 Project
         
-        Caldwell, P. C., M. A. Merrifield, P. R. Thompson (2015), Sea level measured by tide gauges from global oceans - the Joint Archive for Sea Level holdings (NCEI Accession 0019568), Version 5.5, NOAA National Centers for Environmental Information, Dataset, https://doi.org/10.7289/V5V40S7W.
+        Caldwell, P. C., Merrifield, M. A., & Thompson, P. R. (2015). *Sea level measured by tide gauges from global oceans — the Joint Archive for Sea Level holdings* (NCEI Accession 0019568, Version 5.5) \[Dataset\]. NOAA National Centers for Environmental Information. https://doi.org/10.7289/V5V40S7W.
         
-        C. D. Keeling, S. C. Piper, R. B. Bacastow, M. Wahlen, T. P. Whorf, M. Heimann, and H. A. Meijer, Exchanges of atmospheric CO2 and 13CO2 with the terrestrial biosphere and oceans from 1978 to 2000. I. Global aspects, SIO Reference Series, No. 01-06, Scripps Institution of Oceanography, San Diego, 88 pages, 2001. Retrieved from https://scrippsco2.ucsd.edu/data/atmospheric_co2/primary_mlo_co2_record.html
+        Keeling, C. D., Piper, S. C., Bacastow, R. B., Wahlen, M., Whorf, T. P., Heimann, M., & Meijer, H. A. (2001). Exchanges of atmospheric CO2 and 13CO2 with the terrestrial biosphere and oceans from 1978 to 2000 [Dataset]. Scripps Institution of Oceanography. Retrieved 2023 from https://scrippsco2.ucsd.edu/data/atmospheric_co2/primary_mlo_co2_record.html
         
-        Lan, X., Tans, P. and K.W. Thoning: Trends in globally-averaged CO2 determined from NOAA Global Monitoring Laboratory measurements. Version 2023-04 https://doi.org/10.15138/9N0H-ZH07
+        Lan, X., Tans, P., & Thoning, K.W. (2023). *Trends in globally-averaged CO2 determined from NOAA Global Monitoring Laboratory measurements* (Version 2023-04) \[Dataset\]. https://doi.org/10.15138/9N0H-ZH07
         
-        Permanent Service for Mean Sea Level (PSMSL), 2023, "Tide Gauge Data", Retrieved from http://www.psmsl.org/data/obtaining/.
+        Permanent Service for Mean Sea Level (PSMSL) (2023). Tide Gauge Data \[Dataset\]. Retrieved 2023 from http://www.psmsl.org/data/obtaining/
         
         #### GEOL 330 Paper
         
