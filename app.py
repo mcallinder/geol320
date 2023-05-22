@@ -4,7 +4,7 @@ import dash_bootstrap_components as dbc
 
 app = Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
 
-# Gunicorn server, see gunicorn.conf.py
+# Gunicorn server
 server = app.server
 
 # Set up navigation bar and main container for all pages
