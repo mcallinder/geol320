@@ -1,3 +1,12 @@
+div.about h4 {
+    margin-top: 40px;
+    text-decoration: none;
+}
+
+div.links p {
+    margin: 0;
+}
+
 div.markdown a {
     text-decoration: none;
 }
@@ -11,11 +20,6 @@ div.markdown h4 {
     text-decoration: underline;
 }
 
-div.about h4 {
-    margin-top: 40px;
-    text-decoration: none;
-}
-
 div.markdown h5 {
     margin-left: 20px;
     margin-top: 20px;
@@ -24,10 +28,6 @@ div.markdown h5 {
 div.markdown h6 {
     margin-left: 40px;
     margin-top: 20px;
-}
-
-div.links p {
-    margin: 0;
 }
 
 div.markdown ul {

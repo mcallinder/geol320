@@ -2,7 +2,7 @@ from constants import title
 from dash import Dash, dcc, html, page_container, page_registry
 import dash_bootstrap_components as dbc
 
-app = Dash(__name__, use_pages=True, external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP], use_pages=True)
 
 # Gunicorn server
 server = app.server
@@ -13,19 +13,19 @@ app.layout = html.Div([
         html.Div([
             html.Div([
                 dcc.Link(
-                    f"{page['name']}",
+                    children=f"{page['name']}",
                     href=page["relative_path"],
-                    style={'textDecoration': 'none', 'color': 'white'}
+                    style={'color': 'white', 'textDecoration': 'none'}
                 )
-            ], style={'paddingLeft': '20px', 'display': 'inline-block'}) for page in page_registry.values()
+            ], style={'display': 'inline-block', 'paddingLeft': '20px'}) for page in page_registry.values()
         ]),
     ], brand=title, brand_href='/', color='dark', dark=True),
     dbc.Row([
-        dbc.Col(md=1, lg=1),
+        dbc.Col(lg=1, md=1),
         dbc.Col([
             html.Br(),
             page_container
-        ], md=10, lg=10)
+        ], lg=10, md=10)
     ]),
     html.Br()
 ])

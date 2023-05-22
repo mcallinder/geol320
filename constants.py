@@ -69,7 +69,7 @@ uhslc_losan = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d567a.
 uhslc_lajol = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d554a.csv" if use_remote else "data/d554a.csv"
 uhslc_sandi = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d569a.csv" if use_remote else "data/d569a.csv"
 
-# PSMSL tide monthly gauge data sources
+# PSMSL tide gauge monthly data sources
 psmsl_cresc_mon = "https://psmsl.org/data/obtaining/rlr.monthly.data/378.rlrdata"  if use_remote else "data/378.rlrdata"
 psmsl_humbo_mon = "https://psmsl.org/data/obtaining/rlr.monthly.data/1639.rlrdata" if use_remote else "data/1639.rlrdata"
 psmsl_arena_mon = "https://psmsl.org/data/obtaining/rlr.monthly.data/2125.rlrdata" if use_remote else "data/2125.rlrdata"
@@ -86,7 +86,7 @@ psmsl_losan_mon = "https://psmsl.org/data/obtaining/rlr.monthly.data/245.rlrdata
 psmsl_lajol_mon = "https://psmsl.org/data/obtaining/rlr.monthly.data/256.rlrdata"  if use_remote else "data/256.rlrdata"
 psmsl_sandi_mon = "https://psmsl.org/data/obtaining/rlr.monthly.data/158.rlrdata"  if use_remote else "data/158.rlrdata"
 
-# PSMSL tide annual gauge data sources
+# PSMSL tide gauge annual data sources
 psmsl_cresc_ann = "https://psmsl.org/data/obtaining/rlr.annual.data/378.rlrdata"  if use_remote else "data/378a.rlrdata"
 psmsl_humbo_ann = "https://psmsl.org/data/obtaining/rlr.annual.data/1639.rlrdata" if use_remote else "data/1639a.rlrdata"
 psmsl_arena_ann = "https://psmsl.org/data/obtaining/rlr.annual.data/2125.rlrdata" if use_remote else "data/2125a.rlrdata"
