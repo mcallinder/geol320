@@ -1,9 +1,12 @@
 from plotly.colors import qualitative
 
+# If True, will pull data from sources' website, else use local data previously downloaded from same source.
 use_remote = False
 
+# Website title
 title = "GEOL 320 - Sea-Level Rise in California"
 
+# Plotly graph configuration options
 config = {
     'displaylogo': False,
     'displayModeBar': False,
@@ -12,7 +15,7 @@ config = {
     # 'staticPlot': True,
 }
 
-# California tide gauge stations
+# California tide gauge station names
 name_cresc = 'Crescent City'
 name_humbo = 'Humboldt Bay'
 name_arena = 'Arena Cove'
@@ -30,6 +33,7 @@ name_losan = 'Los Angeles'
 name_lajol = 'La Jolla'
 name_sandi = 'San Diego'
 
+# California tide gauge station GPS coordinates
 coord_cresc = [41.745, -124.183]
 coord_humbo = [40.767, -124.217]
 coord_arena = [38.913, -123.708]
@@ -47,11 +51,11 @@ coord_losan = [33.720, -118.272]
 coord_lajol = [32.867, -117.257]
 coord_sandi = [32.713, -117.173]
 
-# CO2 concentration data
+# CO2 concentration data sources
 co2_data1 = "https://scrippsco2.ucsd.edu/assets/data/atmospheric/stations/in_situ_co2/monthly/monthly_in_situ_co2_mlo.csv" if use_remote else "data/monthly_in_situ_co2_mlo.csv"
 co2_data2 = "https://gml.noaa.gov/webdata/ccgg/trends/co2/co2_mm_gl.csv" if use_remote else "data/co2_mm_gl.csv"
 
-# UHSLC tide gauge daily research quality data
+# UHSLC tide gauge daily research quality data sources
 uhslc_cresc = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d556a.csv" if use_remote else "data/d556a.csv"
 uhslc_humbo = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d576a.csv" if use_remote else "data/d576a.csv"
 uhslc_arena = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d573a.csv" if use_remote else "data/d573a.csv"
@@ -65,7 +69,7 @@ uhslc_losan = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d567a.
 uhslc_lajol = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d554a.csv" if use_remote else "data/d554a.csv"
 uhslc_sandi = "https://uhslc.soest.hawaii.edu/data/csv/rqds/pacific/daily/d569a.csv" if use_remote else "data/d569a.csv"
 
-# PSMSL tide monthly gauge data
+# PSMSL tide monthly gauge data sources
 psmsl_cresc_mon = "https://psmsl.org/data/obtaining/rlr.monthly.data/378.rlrdata"  if use_remote else "data/378.rlrdata"
 psmsl_humbo_mon = "https://psmsl.org/data/obtaining/rlr.monthly.data/1639.rlrdata" if use_remote else "data/1639.rlrdata"
 psmsl_arena_mon = "https://psmsl.org/data/obtaining/rlr.monthly.data/2125.rlrdata" if use_remote else "data/2125.rlrdata"
@@ -82,7 +86,7 @@ psmsl_losan_mon = "https://psmsl.org/data/obtaining/rlr.monthly.data/245.rlrdata
 psmsl_lajol_mon = "https://psmsl.org/data/obtaining/rlr.monthly.data/256.rlrdata"  if use_remote else "data/256.rlrdata"
 psmsl_sandi_mon = "https://psmsl.org/data/obtaining/rlr.monthly.data/158.rlrdata"  if use_remote else "data/158.rlrdata"
 
-# PSMSL tide annual gauge data
+# PSMSL tide annual gauge data sources
 psmsl_cresc_ann = "https://psmsl.org/data/obtaining/rlr.annual.data/378.rlrdata"  if use_remote else "data/378a.rlrdata"
 psmsl_humbo_ann = "https://psmsl.org/data/obtaining/rlr.annual.data/1639.rlrdata" if use_remote else "data/1639a.rlrdata"
 psmsl_arena_ann = "https://psmsl.org/data/obtaining/rlr.annual.data/2125.rlrdata" if use_remote else "data/2125a.rlrdata"
@@ -99,6 +103,7 @@ psmsl_losan_ann = "https://psmsl.org/data/obtaining/rlr.annual.data/245.rlrdata"
 psmsl_lajol_ann = "https://psmsl.org/data/obtaining/rlr.annual.data/256.rlrdata"  if use_remote else "data/256a.rlrdata"
 psmsl_sandi_ann = "https://psmsl.org/data/obtaining/rlr.annual.data/158.rlrdata"  if use_remote else "data/158a.rlrdata"
 
+# List of UHSLC data and information
 uhslc_list = [
     # id, name,       daily,       [lat, lon]]
     [556, name_cresc, uhslc_cresc, coord_cresc],
@@ -115,6 +120,7 @@ uhslc_list = [
     [569, name_sandi, uhslc_sandi, coord_sandi]
 ]
 
+# List of PSMSL data and information
 psmsl_list = [
     # id,  name,       monthly,         annual,          [lat, lon]
     [378,  name_cresc, psmsl_cresc_mon, psmsl_cresc_ann, coord_cresc],
@@ -134,7 +140,8 @@ psmsl_list = [
     [158,  name_sandi, psmsl_sandi_mon, psmsl_sandi_ann, coord_sandi]
 ]
 
-# Assigning each location its own color so it can be uniform across different plots
+# Assigning each location its own color, so it can be uniform across different plots.
+# Dash color sequences viewable at https://plotly.com/python/discrete-color/
 colors = {
     name_cresc: qualitative.Light24[0],
     name_humbo: qualitative.Light24[1],
